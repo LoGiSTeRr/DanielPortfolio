@@ -11,7 +11,7 @@ const Navbar = () => {
             <Link href="/projects">Projects</Link>
             <Link href="/articles">Articles</Link>
         </nav>
-        <Logo/>
+        
         <nav>
             <Link href="/" target={"_blank"}>T</Link>
             <Link href="/" target={"_blank"}>T</Link>
@@ -20,6 +20,10 @@ const Navbar = () => {
             <Link href="/" target={"_blank"}>T</Link>
             <Link href="/" target={"_blank"}>T</Link>
         </nav>
+
+        <div className='absolute left-[50%] top-2 gtranslate-x-[-50%]'>
+            <Logo/>
+        </div>
     </header>
   )
 }
