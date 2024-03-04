@@ -1,9 +1,9 @@
 'use client';
-
-import Link from "next/link"
-import React from "react"
-import Logo from "../components/Logo"
+import Link from "next/link";
+import React from "react";
+import Logo from "../components/Logo";
 import { useRouter } from "next/navigation";
+import { TwitterIcon } from "../components/Icons";
 
 const Navbar = () => {
     const router = useRouter();
@@ -18,7 +18,9 @@ const Navbar = () => {
             </nav>
 
             <nav>
-                <Link href="/" target={"_blank"}>T</Link>
+                <Link href="/" target={"_blank"}>
+                    <TwitterIcon/>
+                </Link>
                 <Link href="/" target={"_blank"}>T</Link>
                 <Link href="/" target={"_blank"}>T</Link>
                 <Link href="/" target={"_blank"}>T</Link>
