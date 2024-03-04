@@ -4,6 +4,7 @@ import React from "react";
 import Logo from "../components/Logo";
 import { useRouter } from "next/navigation";
 import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "../components/Icons";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
     const router = useRouter();
@@ -18,21 +19,21 @@ const Navbar = () => {
             </nav>
 
             <nav className="flex items-center justify-center flex-wrap">
-                <Link href="/" target={"_blank"}>
+                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
                     <TwitterIcon/>
-                </Link>
-                <Link href="/" target={"_blank"}>
+                </motion.a>
+                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
                     <GithubIcon/>
-                </Link>
-                <Link href="/" target={"_blank"}>
+                </motion.a>
+                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href='https://twitter.com'>
                     <LinkedInIcon/>
-                </Link>
-                <Link href="/" target={"_blank"}>
+                </motion.a>
+                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
                     <PinterestIcon/>
-                </Link>
-                <Link href="/" target={"_blank"}>
+                </motion.a>
+                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
                     <DribbbleIcon/>
-                </Link>
+                </motion.a>
             </nav>
 
             <div className='absolute left-[50%] top-2 gtranslate-x-[-50%]'>
