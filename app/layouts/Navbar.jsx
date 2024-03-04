@@ -17,7 +17,7 @@ const Navbar = () => {
                 <Link className="relative group ml-4" href="/articles">Articles</Link>
             </nav>
 
-            <nav>
+            <nav className="flex items-center justify-center flex-wrap">
                 <Link href="/" target={"_blank"}>
                     <TwitterIcon/>
                 </Link>
