@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../components/Logo";
 import { useRouter } from "next/navigation";
-import { TwitterIcon } from "../components/Icons";
+import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "../components/Icons";
 
 const Navbar = () => {
     const router = useRouter();
@@ -21,11 +21,18 @@ const Navbar = () => {
                 <Link href="/" target={"_blank"}>
                     <TwitterIcon/>
                 </Link>
-                <Link href="/" target={"_blank"}>T</Link>
-                <Link href="/" target={"_blank"}>T</Link>
-                <Link href="/" target={"_blank"}>T</Link>
-                <Link href="/" target={"_blank"}>T</Link>
-                <Link href="/" target={"_blank"}>T</Link>
+                <Link href="/" target={"_blank"}>
+                    <GithubIcon/>
+                </Link>
+                <Link href="/" target={"_blank"}>
+                    <LinkedInIcon/>
+                </Link>
+                <Link href="/" target={"_blank"}>
+                    <PinterestIcon/>
+                </Link>
+                <Link href="/" target={"_blank"}>
+                    <DribbbleIcon/>
+                </Link>
             </nav>
 
             <div className='absolute left-[50%] top-2 gtranslate-x-[-50%]'>
