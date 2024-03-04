@@ -19,19 +19,19 @@ const Navbar = () => {
             </nav>
 
             <nav className="flex items-center justify-center flex-wrap">
-                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
+                <motion.a whileTap={{scale:0.9}} whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
                     <TwitterIcon/>
                 </motion.a>
-                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
+                <motion.a whileTap={{scale:0.9}} whileHover={{y:-2}} className="w-6 mx-3" href="https://twitter.com" target={"_blank"}>
                     <GithubIcon/>
                 </motion.a>
-                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href='https://twitter.com'>
+                <motion.a whileTap={{scale:0.9}} whileHover={{y:-2}} className="w-6 mx-3" href='https://twitter.com'>
                     <LinkedInIcon/>
                 </motion.a>
-                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
+                <motion.a whileTap={{scale:0.9}} whileHover={{y:-2}} className="w-6 mx-3" href="https://twitter.com" target={"_blank"}>
                     <PinterestIcon/>
                 </motion.a>
-                <motion.a whileHover={{y:-2}} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
+                <motion.a whileTap={{scale:0.9}} whileHover={{y:-2}} className="w-6 ml-3" href="https://twitter.com" target={"_blank"}>
                     <DribbbleIcon/>
                 </motion.a>
             </nav>
