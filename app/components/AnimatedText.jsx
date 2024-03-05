@@ -1,17 +1,47 @@
-import React from "react"
+'use client'
+
+import React from "react";
+import {motion} from 'framer-motion';
+
+const quote = {
+    initial:{
+        opacity:1
+    },
+    animate:{
+        opacity:1,
+        transition:{
+            delay:0.5,
+            staggerChildren: 0.08,
+        }
+    }
+}
+
+const quote2 = {
+    initial:{
+        opacity:0,
+        y:50
+    },
+    animate:{
+        opacity:1,
+        y:0,
+        transition:{
+            delay:0.5
+        }
+    }
+}
 
 const AnimatedText = ({text,className = ''}) => {
   return (
     <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden'>
-        <h1 className={`inline-block w-full text-dark font-bold capitalize ${className}`}>
+        <motion.h1 variants={quote} initial='initial' animate='animate' className={`inline-block w-full text-dark font-bold capitalize ${className}`}>
             {
                 text.split(" ").map((word,index) =>
-                <span key={word+'-'+index} className="inline-block">
+                <motion.span variants={quote2} key={word+'-'+index} className="inline-block">
                     {word}&nbsp;
-                </span>
+                </motion.span>
                 )
             }
-        </h1>
+        </motion.h1>
     </div>
   )
 }
