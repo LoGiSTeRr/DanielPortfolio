@@ -5,6 +5,7 @@ import Layout from "./layouts/Layout";
 import ProfilePicture from '../public/images/profile/developer-pic-1.png'
 import AnimatedText from "./components/AnimatedText";
 import Link from "next/link";
+import { LinkArrow } from "./components/Icons";
 
 export default function Home() {
   return (
@@ -39,10 +40,10 @@ export default function Home() {
                   target="_blank"
                   download={true}
                 >
-                  Resume
+                  Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline"
                   target="_blank"
                   href="daniel.com"
                 >
