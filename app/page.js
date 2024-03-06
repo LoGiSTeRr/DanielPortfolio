@@ -1,7 +1,7 @@
 import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 
-import MainPage from "./pages/MainPage";
+import MainPage from "./sections/MainPage";
 
 export default function Home() {
   return (
