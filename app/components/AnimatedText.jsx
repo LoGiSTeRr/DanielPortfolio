@@ -25,7 +25,7 @@ const quote2 = {
         opacity:1,
         y:0,
         transition:{
-            delay:0.5
+            duration:0.5
         }
     }
 }

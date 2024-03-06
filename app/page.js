@@ -4,6 +4,7 @@ import Layout from "./layouts/Layout";
 
 import ProfilePicture from '../public/images/profile/developer-pic-1.png'
 import AnimatedText from "./components/AnimatedText";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,12 +26,29 @@ export default function Home() {
                 className="!text-6xl !text-left"
                 text="Turning Vision Into Reality With Code And Design. "
               />
-              <p>
+              <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
+              <div className="flex items-center self-start mt-2">
+                <Link
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  href="/dummy.pdf"
+                  target="_blank"
+                  download={true}
+                >
+                  Resume
+                </Link>
+                <Link
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  target="_blank"
+                  href="daniel.com"
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </Layout>
