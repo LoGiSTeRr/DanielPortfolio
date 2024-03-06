@@ -6,6 +6,7 @@ import ProfilePicture from '../public/images/profile/developer-pic-1.png'
 import AnimatedText from "./components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "./components/Icons";
+import Footer from "./layouts/Footer";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark text-light ease-linear duration-200 p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                   href="/dummy.pdf"
                   target="_blank"
                   download={true}
@@ -54,6 +55,7 @@ export default function Home() {
           </div>
         </Layout>
       </div>
+      <Footer/>
     </main>
   );
 }
