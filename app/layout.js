@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import {Montserrat} from 'next/font/google'
+import Navbar from "./layouts/Navbar";
+import Footer from "./layouts/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const montserrat = Montserrat({
@@ -16,7 +18,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} font-mont bg-light w-full min-h-screen`}>{children}</body>
+      <body className={`${inter.className} font-mont bg-light w-full min-h-screen`}>
+        <Navbar/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }

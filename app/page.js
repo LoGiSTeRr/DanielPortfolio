@@ -1,6 +1,3 @@
-import Navbar from "./layouts/Navbar";
-import Footer from "./layouts/Footer";
-
 import MainPage from "./home/page";
 import HireMe from "../components/HireMe";
 
@@ -10,7 +7,6 @@ import lightBulb from "../public/images/svgs/miscellaneous_icons_1.svg";
 export default function Home() {
   return (
     <main className="bg-light text-dark">
-      <Navbar />
       <div className="flex items-center text-dark w-full min-h-screen">
         <MainPage />
 
@@ -19,7 +15,6 @@ export default function Home() {
           <Image src={lightBulb} alt="Title" className="w-full h-auto" />
         </div>
       </div>
-      <Footer />
     </main>
   );
 }
