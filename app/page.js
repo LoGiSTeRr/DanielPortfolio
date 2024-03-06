@@ -1,5 +1,5 @@
-import Navbar from "../layouts/Navbar";
-import Footer from "../layouts/Footer";
+import Navbar from "./layouts/Navbar";
+import Footer from "./layouts/Footer";
 
 import MainPage from "./home/page";
 import HireMe from "../components/HireMe";

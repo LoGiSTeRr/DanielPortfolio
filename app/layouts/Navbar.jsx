@@ -1,9 +1,9 @@
 'use client';
 import Link from "next/link";
 import React from "react";
-import Logo from "../components/Logo";
+import Logo from "../../components/Logo";
 import { useRouter } from "next/navigation";
-import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "../components/Icons";
+import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "../../components/Icons";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
             <nav>
-                <Link className="relative group mr-4" href="/home">Home <span className={`${router.asPath === '/' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
+                <Link className="relative group mr-4" href="/">Home <span className={`${router.asPath === '/' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
                 <Link className="relative group mx-4" href="/about">About</Link>
                 <Link className="relative group mx-4" href="/projects">Projects</Link>
                 <Link className="relative group ml-4" href="/articles">Articles</Link>
