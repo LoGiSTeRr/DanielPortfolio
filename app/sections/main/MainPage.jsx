@@ -1,15 +1,16 @@
 import React from "react";
-import Layout from "../layouts/Layout";
+import Layout from "../../layouts/Layout";
 import Link from "next/link";
 import Image from "next/image";
 
-import ProfilePicture from '../../public/images/profile/developer-pic-1.png'
-import AnimatedText from "../components/AnimatedText";
-import { LinkArrow } from "../components/Icons";
+import ProfilePicture from '../../../public/images/profile/developer-pic-1.png'
+import AnimatedText from "../../components/AnimatedText";
+import { LinkArrow } from "../../components/Icons";
 
 const MainPage = () => {
   return (
-    <Layout className="pt-0">
+    <>
+        <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
               <Image
@@ -49,6 +50,7 @@ const MainPage = () => {
             </div>
           </div>
         </Layout>
+    </>
   )
 }
 export default MainPage
