@@ -13,7 +13,7 @@ const Navbar = () => {
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between text-dark'>
             <nav>
                 <Link className="relative group mr-4" href="/">Home <span className={`${router.asPath === '/' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
-                <Link className="relative group mx-4" href="/about">About</Link>
+                <Link className="relative group mx-4" href="/about">About <span className={`${router.asPath === '/about' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
                 <Link className="relative group mx-4" href="/projects">Projects</Link>
                 <Link className="relative group ml-4" href="/articles">Articles</Link>
             </nav>
