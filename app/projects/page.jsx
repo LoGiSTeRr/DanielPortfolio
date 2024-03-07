@@ -77,9 +77,45 @@ const page = () => {
                     />
                 </div>
                 <div className=' col-span-6'>
-                    
+                    <Project
+                        title={'Crypto Screener Application'}
+                        link={'/'}
+                        img={project1}
+                        github={'/'}
+                        type={'Application'}
+                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
+                    />
                 </div>
-                
+                <div className=' col-span-12'>
+                    <FeaturedProject
+                        title={'Crypto Screener Application'}
+                        link={'/'}
+                        img={project1}
+                        github={'/'}
+                        type={'Application'}
+                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
+                    />
+                </div>
+                <div className=' col-span-6'>
+                    <Project
+                        title={'Crypto Screener Application'}
+                        link={'/'}
+                        img={project1}
+                        github={'/'}
+                        type={'Application'}
+                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
+                    />
+                </div>
+                <div className=' col-span-6'>
+                    <Project
+                        title={'Crypto Screener Application'}
+                        link={'/'}
+                        img={project1}
+                        github={'/'}
+                        type={'Application'}
+                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
+                    />
+                </div>
             </div>
         </Layout>
     </mai>
