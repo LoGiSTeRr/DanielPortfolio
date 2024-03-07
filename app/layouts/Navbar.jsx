@@ -14,8 +14,8 @@ const Navbar = () => {
             <nav>
                 <Link className="relative group mr-4" href="/">Home <span className={`${router.asPath === '/' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
                 <Link className="relative group mx-4" href="/about">About <span className={`${router.asPath === '/about' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
-                <Link className="relative group mx-4" href="/projects">Projects</Link>
-                <Link className="relative group ml-4" href="/articles">Articles</Link>
+                <Link className="relative group mx-4" href="/projects">Projects <span className={`${router.asPath === '/projects' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
+                <Link className="relative group ml-4" href="/articles">Articles <span className={`${router.asPath === '/articles' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
             </nav>
 
             <nav className="flex items-center justify-center flex-wrap">
@@ -25,7 +25,7 @@ const Navbar = () => {
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href="https://twitter.com" target={"_blank"}>
                     <GithubIcon />
                 </motion.a>
-                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href='https://twitter.com'>
+                <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href='https://twitter.com' target={"_blank"}>
                     <LinkedInIcon />
                 </motion.a>
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href="https://twitter.com" target={"_blank"}>
