@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 
 const Skill = ({name,x,y}) => {
     return(
-        <motion.div transition={ {duration: 1.5}} initial={{x:0,y:0}} animate={{x:x,y:y}} whileHover={{scale:1.05}} className='p-8 cursor-pointer shadow-dark flex items-center justify-center rounded-full font-semibold bg-dark text-light absolute px-6 py-3'>
+        <motion.div transition={ {duration: 1.5}} initial={{x:0,y:0}} whileInView={{x:x,y:y}} whileHover={{scale:1.05}} className='p-8 cursor-pointer shadow-dark flex items-center justify-center rounded-full font-semibold bg-dark text-light absolute px-6 py-3'>
             {name}
         </motion.div>
     )
