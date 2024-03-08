@@ -13,12 +13,13 @@ const FramerImage = motion(Image)
 
 const FeaturedArticle = ({img,title,summary,link,time})=> {
     return(
-        <li className='col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+        <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
+            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark'/>
             <Link className='w-full inline-block cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
                 <FramerImage transition={{duration:0.2}} whileHover={{scale:1.05}} src={img} alt={title} className="w-full h-auto" />
             </Link>
             <Link href={link} target="_blank">
-                <h2 className='capitalize text-2xl font-bold my-2 hover:underline underline-offset-2'>
+                <h2 className='capitalize text-2xl mt-2 font-bold my-2 hover:underline underline-offset-2'>
                     {title}
                 </h2>
             </Link>
@@ -52,10 +53,8 @@ const page = () => {
                     link={'/'}
                     img={article1}
                 />
-                <li>
-                    fa-3
-                </li>
             </ul>
+            <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">All Articles</h2>
         </Layout>
     </main>
   )
