@@ -3,11 +3,13 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../../components/Logo";
 import { useRouter } from "next/navigation";
-import { DribbbleIcon, GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "../../components/Icons";
+import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from "../../components/Icons";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "../hooks/useThemeSwitcher";
 
 const Navbar = () => {
     const router = useRouter();
+    const [mode,setMode] = useThemeSwitcher(0)
 
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between text-dark'>
@@ -34,6 +36,14 @@ const Navbar = () => {
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 ml-3" href="https://twitter.com" target={"_blank"}>
                     <DribbbleIcon />
                 </motion.a>
+
+                <button onClick={()=>setMode (mode === "light" ? "dark" : "light")} className="ml-3 flex items-center justify-center rounded-full p-1">
+                    {
+                        mode==='dark' ?
+                        <SunIcon className={"fill-dark"}/> :
+                        <MoonIcon className={"fill-dark"}/>
+                    }
+                </button>
             </nav>
 
             <div className='absolute left-[50%] top-2 gtranslate-x-[-50%]'>
