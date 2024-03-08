@@ -1,15 +1,25 @@
 'use client';
-
 import React from "react";
 import Layout from "../layouts/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import {motion} from 'framer-motion';
-
 import article1 from '../../public/images/articles/s.jpg'
+import article2 from '../../public/images/articles/c.png'
 
 const FramerImage = motion(Image)
+
+const Article = ({img,date,title,link}) => {
+    return(
+        <li className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-dark border-solid border-r-4 border-b-4">
+            <Link href={link} target="_blank">
+                <h2 className="capitalize text-xl underline-offset-2 font-semibold hover:underline">{title}</h2>
+            </Link>
+            <span className="text-primary font-semibold pl-4">{date}</span>
+        </li>
+    )
+}
 
 const FeaturedArticle = ({img,title,summary,link,time})=> {
     return(
@@ -55,6 +65,14 @@ const page = () => {
                 />
             </ul>
             <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">All Articles</h2>
+            <ul>
+                <Article
+                    title={'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'}
+                    date={'jan 10'}
+                    img={article2}
+                    link={'/'}
+                />
+            </ul>
         </Layout>
     </main>
   )
