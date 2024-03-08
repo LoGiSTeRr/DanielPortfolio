@@ -12,12 +12,12 @@ const Navbar = () => {
     const [mode,setMode] = useThemeSwitcher(0)
 
     return (
-        <header className='w-full px-32 py-8 font-medium flex items-center justify-between text-dark'>
+        <header className='w-full px-32 py-8 font-medium flex items-center justify-between text-dark dark:text-light'>
             <nav>
-                <Link className="relative group mr-4" href="/">Home <span className={`${router.asPath === '/' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
-                <Link className="relative group mx-4" href="/about">About <span className={`${router.asPath === '/about' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
-                <Link className="relative group mx-4" href="/projects">Projects <span className={`${router.asPath === '/projects' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
-                <Link className="relative group ml-4" href="/articles">Articles <span className={`${router.asPath === '/articles' ? 'w-full' : 'w-0'} h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
+                <Link className="relative group mr-4" href="/">Home <span className={`${router.asPath === '/' ? 'w-full' : 'w-0'} h-[1px] dark:bg-light group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
+                <Link className="relative group mx-4" href="/about">About <span className={`${router.asPath === '/about' ? 'w-full' : 'w-0'} h-[1px] dark:bg-light group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
+                <Link className="relative group mx-4" href="/projects">Projects <span className={`${router.asPath === '/projects' ? 'w-full' : 'w-0'} dark:bg-light h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
+                <Link className="relative group ml-4" href="/articles">Articles <span className={`${router.asPath === '/articles' ? 'w-full' : 'w-0'} dark:bg-light h-[1px] group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
             </nav>
 
             <nav className="flex items-center justify-center flex-wrap">
@@ -37,7 +37,7 @@ const Navbar = () => {
                     <DribbbleIcon />
                 </motion.a>
 
-                <button onClick={()=>setMode (mode === "light" ? "dark" : "light")} className="ml-3 flex items-center justify-center rounded-full p-1">
+                <button onClick={()=>setMode (mode === "light" ? "dark" : "light")} className={`ml-3 flex items-center justify-center rounded-full p-1 ${mode === "light" ? "bg-dark text-light": "bg-light text-dark"}}`}>
                     {
                         mode==='dark' ?
                         <SunIcon className={"fill-dark"}/> :

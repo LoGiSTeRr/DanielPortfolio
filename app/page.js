@@ -6,7 +6,7 @@ import lightBulb from "../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {
   return (
-    <main className="bg-light text-dark">
+    <main className="bg-light text-dark dark:bg-dark">
       <div className="flex items-center text-dark w-full min-h-screen">
         <MainPage />
 
