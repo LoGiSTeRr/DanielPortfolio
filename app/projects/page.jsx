@@ -10,7 +10,7 @@ const FeaturedProject = ({type,title,summary,img,link,github}) => {
     return(
         <article className='rounded-br-3xl relative w-full p-12 flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark'/>
-            <Link className='w-1/2 cursor-pointer overflow-hidden rounded-1g' href={link} target="_blank">
+            <Link className='w-1/2 cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
                 <Image src={img} alt={title} className="w-full h-auto" />
             </Link>
             <div className='w-1/2 rounded-br-3xl flex flex-col items-start justify-between pl-6'>
@@ -53,7 +53,7 @@ const Project = ({type,title,img,link,github}) => {
 
 const page = () => {
   return (
-    <mai className='w-full mb-16 flex flex-col items-center justify-center text-dark'>
+    <main className='w-full mb-16 flex flex-col items-center justify-center text-dark'>
         <Layout className="pt-16">
             <AnimatedText className="relative left-7 mb-16 text-[104px]" text={'Imagination Trumps Knowledge!'}/>
 
@@ -120,7 +120,7 @@ const page = () => {
                 </div>
             </div>
         </Layout>
-    </mai>
+    </main>
   )
 }
 export default page
