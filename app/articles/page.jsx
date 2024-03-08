@@ -95,6 +95,36 @@ const page = () => {
                     img={article2}
                     link={'/'}
                 />
+                <Article
+                    title={'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'}
+                    date={'jan 10'}
+                    img={article2}
+                    link={'/'}
+                />
+                <Article
+                    title={'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'}
+                    date={'jan 10'}
+                    img={article2}
+                    link={'/'}
+                />
+                <Article
+                    title={'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'}
+                    date={'jan 10'}
+                    img={article2}
+                    link={'/'}
+                />
+                <Article
+                    title={'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'}
+                    date={'jan 10'}
+                    img={article2}
+                    link={'/'}
+                />
+                <Article
+                    title={'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'}
+                    date={'jan 10'}
+                    img={article2}
+                    link={'/'}
+                />
             </ul>
         </Layout>
     </main>
