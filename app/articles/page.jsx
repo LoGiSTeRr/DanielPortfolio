@@ -1,14 +1,39 @@
 'use client';
-import React from "react";
+import React, { useRef } from "react";
 import Layout from "../layouts/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import {motion} from 'framer-motion';
+import {motion, useMotionValue} from 'framer-motion';
 import article1 from '../../public/images/articles/s.jpg'
 import article2 from '../../public/images/articles/c.png'
 
 const FramerImage = motion(Image)
+
+const MovingImg = ({title,img,link}) => {
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
+    const imgRef = useRef(null);
+
+    function handleMouse (event) {
+        imgRef.current.style.display = "inline-block";
+        x.set(event.pageX);
+        y.set(-10)
+    };
+
+    function handleMouseLeave (event) {
+        imgRef.current.style.display = "none";
+        x.set(0);
+        y.set(0)
+    };
+
+    return(
+        <Link onMouseMove={handleMouse} onMouseLeave={handleMouseLeave} href={link} target="_blank">
+            <h2 className="capitalize text-xl underline-offset-2 font-semibold hover:underline">{title}</h2>
+            <FramerImage style={{x:x, y:y}} ref={imgRef} src={img} alt={title} className="w-96 h-auto hidden absolute rounded-lg"/>
+        </Link>
+    )
+}
 
 const Article = ({img,date,title,link}) => {
     return(
@@ -16,6 +41,7 @@ const Article = ({img,date,title,link}) => {
             <Link href={link} target="_blank">
                 <h2 className="capitalize text-xl underline-offset-2 font-semibold hover:underline">{title}</h2>
             </Link>
+            <MovingImg title={title} link={link} img={img}/>
             <span className="text-primary font-semibold pl-4">{date}</span>
         </li>
     )
