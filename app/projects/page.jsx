@@ -1,17 +1,22 @@
+'use client';
+
 import React from "react";
 import Layout from "../layouts/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg'
+import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image)
 
 const FeaturedProject = ({type,title,summary,img,link,github}) => {
     return(
         <article className='rounded-br-3xl relative w-full p-12 flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark'/>
             <Link className='w-1/2 cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
-                <Image src={img} alt={title} className="w-full h-auto" />
+                <FramerImage transition={{duration:0.2}} whileHover={{scale:1.05}} src={img} alt={title} className="w-full h-auto" />
             </Link>
             <div className='w-1/2 rounded-br-3xl flex flex-col items-start justify-between pl-6'>
                 <span className='text-primary font-medium text-xl'>{type}</span>
