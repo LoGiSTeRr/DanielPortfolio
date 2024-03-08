@@ -39,7 +39,7 @@ const Project = ({type,title,img,link,github}) => {
         <article className='rounded-br-3xl w-full flex-col p-6 relative flex items-center justify-center rounded-2xl border border-solid border-dark bg-light shadow-2xl'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark'/>
             <Link className='w-full cursor-pointer overflow-hidden rounded-1g' href={link} target="_blank">
-                <Image src={img} alt={title} className="w-full h-auto" />
+                <FramerImage transition={{duration:0.2}} whileHover={{scale:1.05}} src={img} alt={title} className="w-full h-auto" />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className='text-primary font-medium text-xl'>{type}</span>
