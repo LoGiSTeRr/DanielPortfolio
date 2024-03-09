@@ -31,7 +31,7 @@ const Navbar = () => {
                     <LinkedInIcon />
                 </motion.a>
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href="https://twitter.com" target={"_blank"}>
-                    <PinterestIcon />
+                    <PinterestIcon className={'dark:bg-light dark:rounded-full'} />
                 </motion.a>
                 <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 ml-3" href="https://twitter.com" target={"_blank"}>
                     <DribbbleIcon />

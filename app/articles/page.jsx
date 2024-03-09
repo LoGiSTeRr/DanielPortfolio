@@ -37,29 +37,29 @@ const MovingImg = ({title,img,link}) => {
 
 const Article = ({img,date,title,link}) => {
     return(
-        <motion.li initial={{y:200}} whileInView={{y:0,transition:{duration:0.5}}} viewport={{once:true}} className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-dark border-solid border-r-4 border-b-4">
+        <motion.li initial={{y:200}} whileInView={{y:0,transition:{duration:0.5}}} viewport={{once:true}} className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between dark:bg-dark dark:text-light dark:border-light bg-light text-dark first:mt-0 border border-dark border-solid border-r-4 border-b-4">
             <MovingImg title={title} link={link} img={img}/>
-            <span className="text-primary font-semibold pl-4">{date}</span>
+            <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
         </motion.li>
     )
 }
 
 const FeaturedArticle = ({img,title,summary,link,time})=> {
     return(
-        <li className='relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark'/>
+        <li className='relative col-span-1 w-full p-4 dark:bg-dark dark:border-light bg-light border border-solid border-dark rounded-2xl'>
+            <div className='absolute top-0 -right-3 dark:bg-light -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark'/>
             <Link className='w-full inline-block cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
                 <FramerImage transition={{duration:0.2}} whileHover={{scale:1.05}} src={img} alt={title} className="w-full h-auto" />
             </Link>
             <Link href={link} target="_blank">
-                <h2 className='capitalize text-2xl mt-2 font-bold my-2 hover:underline underline-offset-2'>
+                <h2 className='capitalize dark:text-light text-2xl mt-2 font-bold my-2 hover:underline underline-offset-2'>
                     {title}
                 </h2>
             </Link>
-            <p className="text-sm mb-2">
+            <p className="text-sm mb-2 dark:text-light">
                 {summary}
             </p>
-            <span className='text-primary font-semibol'>{time}</span>
+            <span className='text-primary dark:text-primaryDark font-semibol'>{time}</span>
         </li>
     )
 }
@@ -87,7 +87,7 @@ const page = () => {
                     img={article1}
                 />
             </ul>
-            <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">All Articles</h2>
+            <h2 className="dark:text-light font-bold text-4xl w-full text-center my-16 mt-32">All Articles</h2>
             <ul>
                 <Article
                     title={'Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling'}
