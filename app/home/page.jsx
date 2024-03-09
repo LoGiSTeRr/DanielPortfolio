@@ -10,7 +10,7 @@ import { LinkArrow } from "../../components/Icons";
 const MainPage = () => {
   return (
     <>
-      <Layout className="pt-0">
+      <Layout className="pt-0 dark:text-light">
         <div className="flex items-center justify-between w-full">
           <div className="w-1/2">
             <Image
@@ -32,7 +32,7 @@ const MainPage = () => {
             </p>
             <div className="flex items-center self-start mt-2">
               <Link
-                className="flex items-center bg-dark text-light ease-linear duration-200 p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                className="flex items-center dark:border-light bg-dark text-light ease-linear duration-200 p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                 href="/dummy.pdf"
                 target="_blank"
                 download={true}
@@ -40,7 +40,7 @@ const MainPage = () => {
                 Resume <LinkArrow className={"w-6 ml-1"} />
               </Link>
               <Link
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                className="ml-4 dark:text-light text-lg font-medium capitalize text-dark underline"
                 target="_blank"
                 href="daniel.com"
               >

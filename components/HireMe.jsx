@@ -6,8 +6,8 @@ const HireMe = () => {
   return (
     <div className='fixed left-4 bottom-4 flex items-center justifyfcenter overflow-hidden'>
       <div className='w-48 h-auto flex items-center justify-center relative'>
-        <CircularText className={'fill-black animate-spin-slow'} />
-        <Link href="mailto:abcd@gmail.com" className='flex font-semibold ease-linear duration-200 hover:bg-light hover:text-dark items-center justify-center absolute 1eft-1/2 top-1/2 -translate-x-0 -translate-y-1/2 bg-dark text-light shadow-md border border-solid border-dark h-20 w-20 rounded-full'>
+        <CircularText className={'fill-black animate-spin-slow dark:fill-light'} />
+        <Link href="mailto:abcd@gmail.com" className='flex font-semibold dark:border-light ease-linear duration-200 hover:bg-light hover:text-dark items-center justify-center absolute 1eft-1/2 top-1/2 -translate-x-0 -translate-y-1/2 bg-dark text-light shadow-md border border-solid border-dark h-20 w-20 rounded-full'>
           Hire Me
         </Link>
       </div>
