@@ -7,6 +7,7 @@ import Image from "next/image";
 import {motion, useMotionValue} from 'framer-motion';
 import article1 from '../../public/images/articles/s.jpg'
 import article2 from '../../public/images/articles/c.png'
+import Transition from "@/components/Transition";
 
 const FramerImage = motion(Image)
 
@@ -75,6 +76,8 @@ const FeaturedArticle = ({img,title,summary,link,time})=> {
 
 const page = () => {
   return (
+    <>
+    <Transition/>
     <main className='w-full text-dark mb-16 flex flex-col items-center justify-center overflow-hidden'>
         <Layout className="pt-16">
             <AnimatedText className="text-[104px] mb-16 lg:left-0 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" text={'Words Can Change The World! '}/>
@@ -137,6 +140,7 @@ const page = () => {
             </ul>
         </Layout>
     </main>
+    </>
   )
 }
 export default page

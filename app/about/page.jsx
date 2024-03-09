@@ -9,6 +9,7 @@ import profile from '../../public/images/profile/developer-pic-2.jpg'
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "./Skills";
 import Experince from "./Experince";
+import Transition from "@/components/Transition";
 
 const AnimatedNumbers = ({value}) => {
   const ref = useRef(null);
@@ -36,6 +37,7 @@ const AnimatedNumbers = ({value}) => {
 const About = () => {
   return (
     <>
+    <Transition/>
       <main className='flex w-full flex-col items-center justify-center dark:text-light text-dark'>
         <Layout className="pt-16 ">
           <AnimatedText className="relative left-7 mb-16 text-[104px] lg:left-0 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" text={'Passion Fuels Purpose! '}/>

@@ -6,10 +6,12 @@ import Image from "next/image";
 import ProfilePicture from '../../public/images/profile/developer-pic-1.png'
 import AnimatedText from "../../components/AnimatedText";
 import { LinkArrow } from "../../components/Icons";
+import Transition from "@/components/Transition";
 
 const MainPage = () => {
   return (
     <>
+    <Transition/>
       <Layout className="pt-0 dark:text-light md:pt-16 sm:pt-8">
         <div className="flex items-center justify-between w-full lg:flex-col">
           <div className="w-1/2 md:w-full">

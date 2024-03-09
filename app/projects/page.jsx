@@ -8,6 +8,7 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
 import { motion } from "framer-motion";
+import Transition from "@/components/Transition";
 
 const FramerImage = motion(Image)
 
@@ -66,6 +67,8 @@ const Project = ({type,title,img,link,github}) => {
 
 const page = () => {
   return (
+    <>
+    <Transition/>
     <main className='w-full mb-16 flex flex-col items-center justify-center text-dark'>
         <Layout className="pt-16">
             <AnimatedText className="relative left-7 mb-16 text-[104px] lg:left-0 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" text={'Imagination Trumps Knowledge!'}/>
@@ -134,6 +137,7 @@ const page = () => {
             </div>
         </Layout>
     </main>
+    </>
   )
 }
 export default page
