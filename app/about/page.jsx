@@ -59,7 +59,13 @@ const About = () => {
             </div>
             <div className='dark:bg-dark dark:border-light col-span-3 relative h-max rounded-2xl border-2 border-solid bg-light p-8 border-dark'>
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] dark:bg-light bg-dark'/>
-              <Image alt="profile" src={profile} className="w-full k h-auto rounded-2xl"/>
+              <Image alt="profile" src={profile} className="w-full k h-auto rounded-2xl" 
+              priority
+              sizes="
+              (max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw
+              "/>
             </div>
             <div className='col-span-2 flex flex-col items-end justify-between'>
               <div className= 'flex flex-col items-end justify-center'>

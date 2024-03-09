@@ -49,7 +49,14 @@ const FeaturedArticle = ({img,title,summary,link,time})=> {
         <li className='relative col-span-1 w-full p-4 dark:bg-dark dark:border-light bg-light border border-solid border-dark rounded-2xl'>
             <div className='absolute top-0 -right-3 dark:bg-light -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark'/>
             <Link className='w-full inline-block cursor-pointer overflow-hidden rounded-lg' href={link} target="_blank">
-                <FramerImage transition={{duration:0.2}} whileHover={{scale:1.05}} src={img} alt={title} className="w-full h-auto" />
+                <FramerImage 
+                sizes="
+                    (max-width: 768px) 100vw,
+                    (max-width: 1200px) 50vw,
+                    50vw
+                "
+                priority
+                transition={{duration:0.2}} whileHover={{scale:1.05}} src={img} alt={title} className="w-full h-auto" />
             </Link>
             <Link href={link} target="_blank">
                 <h2 className='capitalize dark:text-light text-2xl mt-2 font-bold my-2 hover:underline underline-offset-2'>
