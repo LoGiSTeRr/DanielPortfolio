@@ -39,9 +39,9 @@ const Navbar = () => {
     }
 
     return (
-        <header className='w-full relative px-32 py-8 font-medium flex items-center justify-between text-dark dark:text-light'>
+        <header className='w-full relative px-32 py-8 font-medium flex items-center justify-between text-dark dark:text-light z-10 1g:px-16 md:px-12 sm:px-8'>
 
-            <button onClick={handleClick} className=" flex-col justify-center items-center hidden lg:flex">
+            <button onClick={handleClick} className="flex-col justify-center items-center hidden lg:flex">
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-linear h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1.5':''}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-linear h-0.5 w-6 rounded-sm my-1 ${isOpen ? 'opacity-0':'opacity-100'}`}></span>
                 <span className={`bg-dark dark:bg-light block transition-all duration-300 ease-linear h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1.5':''}`}></span>
@@ -122,7 +122,7 @@ const Navbar = () => {
                 </> : null
             }
 
-            <div className='absolute left-[50%] top-2 gtranslate-x-[-50%]'>
+            <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
                 <Logo />
             </div>
         </header>

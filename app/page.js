@@ -11,7 +11,7 @@ export default function Home() {
         <MainPage />
 
         <HireMe />
-        <div className=" absolute right-8 bottom-8 inline-block w-20">
+        <div className=" absolute right-8 bottom-8 inline-block w-20 md:hidden">
           <Image src={lightBulb} alt="Title" className="w-full h-auto" />
         </div>
       </div>

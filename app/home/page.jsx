@@ -10,13 +10,13 @@ import { LinkArrow } from "../../components/Icons";
 const MainPage = () => {
   return (
     <>
-      <Layout className="pt-0 dark:text-light">
-        <div className="flex items-center justify-between w-full">
-          <div className="w-1/2">
+      <Layout className="pt-0 dark:text-light md:pt-16 sm:pt-8">
+        <div className="flex items-center justify-between w-full lg:flex-col">
+          <div className="w-1/2 md:w-full">
             <Image
               src={ProfilePicture}
               alt="Daniel"
-              className="h-auto w-full"
+              className="h-auto w-full  lg:hidden md:inline-block md:w-full"
               priority
               sizes="
               (max-width: 768px) 100vw,
@@ -25,18 +25,18 @@ const MainPage = () => {
               "
             />
           </div>
-          <div className="w-1/2 flex flex-col items-center self-center">
+          <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
             <AnimatedText
-              className="!text-6xl !text-left"
+              className="!text-6xl !text-left  xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl"
               text="Turning Vision Into Reality With Code And Design. "
             />
-            <p className="my-4 text-base font-medium">
+            <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
               As a skilled full-stack developer, I am dedicated to turning
               ideas into innovative web applications. Explore my latest
               projects and articles, showcasing my expertise in React.js and
               web development.
             </p>
-            <div className="flex items-center self-start mt-2">
+            <div className="flex items-center self-start mt-2 lg:self-center">
               <Link
                 className="flex items-center dark:border-light bg-dark text-light ease-linear duration-200 p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                 href="/dummy.pdf"
