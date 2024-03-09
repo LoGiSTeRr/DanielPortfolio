@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../components/Logo";
 import { useRouter } from "next/navigation";
 import { DribbbleIcon, GithubIcon, LinkedInIcon, MoonIcon, PinterestIcon, SunIcon, TwitterIcon } from "../../components/Icons";
@@ -11,8 +11,21 @@ const Navbar = () => {
     const router = useRouter();
     const [mode,setMode] = useThemeSwitcher(0)
 
+    const [isOpen,setIsOpen] = useState(false);
+
+    const handleClick = () => {
+        setIsOpen (!isOpen)
+    }
+
     return (
         <header className='w-full px-32 py-8 font-medium flex items-center justify-between text-dark dark:text-light'>
+
+            <button onClick={handleClick} className="flex flex-col justify-center items-center">
+                <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-1.5':''}`}></span>
+                <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm my-1 ${isOpen ? 'opacity-0':'opacity-100'}`}></span>
+                <span className={`bg-dark dark:bg-light block h-0.5 w-6 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1.5':''}`}></span>
+            </button>
+
             <nav>
                 <Link className="relative group mr-4" href="/">Home <span className={`${router.asPath === '/' ? 'w-full' : 'w-0'} h-[1px] dark:bg-light group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
                 <Link className="relative group mx-4" href="/about">About <span className={`${router.asPath === '/about' ? 'w-full' : 'w-0'} h-[1px] dark:bg-light group-hover:w-full absolute left-0 -bottom-0.5 inline-block ease duration-300 transition-[width] bg-dark`}>&nbsp;</span></Link>
