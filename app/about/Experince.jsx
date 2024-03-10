@@ -36,29 +36,19 @@ const Experince = () => {
             "/>
             <ul className="w-full flex flex-col items-start justify-between ml-4 xl:ml-2">
                 <Details
-                    position={'Software Engineer'} company={'Google'}
-                    time={'2022-Present'}  address={'Mountain View, CA'}
-                    work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."}
+                    position={'IT Teacher'} company={'STEP IT Academy'}
+                    time={'2022-Present'}  address={'Baku'}
+                    work={"Teaching the following courses: Web development Robotics Blender Python IT Basics"}
                 />
                 <Details
-                    position={'Software Engineer'} company={'Google'}
-                    time={'2022-Present'}  address={'Mountain View, CA'}
-                    work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."}
+                    position={'Software Engineer'} company={'Freelance'}
+                    time={'2022-Present'}  address={'Baku'}
+                    work={"Worked on creating Desktop Applications on .NET technology, such as self-written IDE, Maze generator, Messenger"}
                 />
                 <Details
-                    position={'Software Engineer'} company={'Google'}
-                    time={'2022-Present'}  address={'Mountain View, CA'}
-                    work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."}
-                />
-                <Details
-                    position={'Software Engineer'} company={'Google'}
-                    time={'2022-Present'}  address={'Mountain View, CA'}
-                    work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."}
-                />
-                <Details
-                    position={'Software Engineer'} company={'Google'}
-                    time={'2022-Present'}  address={'Mountain View, CA'}
-                    work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."}
+                    position={'Web developer'} company={'Start-Up'}
+                    time={'2022-Present'}  address={'Baku'}
+                    work={"Used ASP.NET to develop well-optimized APIs with well-written documentations"}
                 />
             </ul>
         </div>

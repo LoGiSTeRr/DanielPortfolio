@@ -34,8 +34,8 @@ const Skills = () => {
             <Skill name={'Tailwindcss'} x="-20vw" y="-15vw"/>
             <Skill name={'Blender'} x="32vw" y="-5vw"/>
             <Skill name={'Spline'} x="0vw" y="-20vw"/>
-            <Skill name={'Daun'} x="-25vw" y="18vw"/>
-            <Skill name={'Daun'} x="18vw" y="18vw"/>
+            <Skill name={'.NET'} x="-25vw" y="18vw"/>
+            <Skill name={'C++'} x="18vw" y="18vw"/>
         </div>
     </>
   )
