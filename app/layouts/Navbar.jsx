@@ -56,19 +56,19 @@ const Navbar = () => {
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap">
-                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mr-3" href="https://twitter.com" target={"_blank"}>
+                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mr-3" href="https://borodindaniel.com" target={"_blank"}>
                         <TwitterIcon />
                     </motion.a>
-                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href="https://twitter.com" target={"_blank"}>
+                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href="https://github.com/LoGiSTeRr" target={"_blank"}>
                         <GithubIcon />
                     </motion.a>
-                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href='https://twitter.com' target={"_blank"}>
+                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href='https://www.linkedin.com/in/daniel-borodin/' target={"_blank"}>
                         <LinkedInIcon />
                     </motion.a>
-                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href="https://twitter.com" target={"_blank"}>
+                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 mx-3" href="https://borodindaniel.com" target={"_blank"}>
                         <PinterestIcon className={'dark:bg-light dark:rounded-full'} />
                     </motion.a>
-                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 ml-3" href="https://twitter.com" target={"_blank"}>
+                    <motion.a whileTap={{ scale: 0.9 }} whileHover={{ y: -2 }} className="w-6 ml-3" href="https://borodindaniel.com" target={"_blank"}>
                         <DribbbleIcon />
                     </motion.a>
 

@@ -9,6 +9,13 @@ import { LinkArrow } from "../../components/Icons";
 import Transition from "@/components/Transition";
 
 const MainPage = () => {
+  const handlePhoneNumberClick = () => {
+    const phoneNumber = '+994702667424';
+
+    const whatsappLink = `https://wa.me/${phoneNumber}`;
+
+    window.location.href = whatsappLink;
+  };
   return (
     <>
     <Transition/>
@@ -33,16 +40,16 @@ const MainPage = () => {
               text="Turning Vision Into Reality With Code And Design. "
             />
             <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-              As a skilled full-stack developer, I am dedicated to turning
+              As a skilled backend developer, I am dedicated to turning
               ideas into innovative web applications. Explore my latest
-              projects and articles, showcasing my expertise in React.js and
-              web development.
+              projects and articles, showcasing my expertise in .NET and
+              backend development.
             </p>
             <div className="flex items-center self-start mt-2 lg:self-center">
               <Link
                 className="flex md:p-2 md:px-4 md:text-base
                 items-center dark:border-light bg-dark text-light ease-linear duration-200 p-2.5 px-6 rounded-lg text-1g font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
-                href="/dummy.pdf"
+                href="/CV.pdf"
                 target="_blank"
                 download={true}
               >
@@ -51,7 +58,7 @@ const MainPage = () => {
               <Link
                 className="ml-4 dark:text-light text-lg font-medium capitalize text-dark underline md:text-base"
                 target="_blank"
-                href="daniel.com"
+                href='https://wa.me/+994702667424'
               >
                 Contact
               </Link>
