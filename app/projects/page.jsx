@@ -6,7 +6,9 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from '../../public/images/projects/crypto-screener-cover-image.jpg';
+import project1 from '../../public/P1.png';
+import project2 from '../../public/P2.png';
+import project3 from '../../public/P3.png';
 import { motion } from "framer-motion";
 import Transition from "@/components/Transition";
 
@@ -76,62 +78,32 @@ const page = () => {
             <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                 <div className='col-span-12'>
                     <FeaturedProject
-                        title={'Crypto Screener Application'}
-                        link={'/'}
+                        title={'3D website'}
+                        link={'https://www.plumyuzbor.com'}
                         img={project1}
-                        github={'/'}
-                        type={'Application'}
-                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
+                        github={'https://www.plumyuzbor.com'}
+                        type={'Web-Application'}
+                        summary={"A website made by Three.js,React.js and .NET, user can interact with the plane by scrolling it."}
                     />
                 </div>
                 <div className='sm:col-span-12 col-span-6'>
                     <Project
-                        title={'Crypto Screener Application'}
-                        link={'/'}
-                        img={project1}
-                        github={'/'}
-                        type={'Application'}
-                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
+                        title={'Messenger'}
+                        link={'https://github.com/LoGiSTeRr/Messenger'}
+                        img={project2}
+                        github={'https://github.com/LoGiSTeRr/Messenger'}
+                        type={'Desktop-Application'}
+                        summary={"A feature-rich Messenger Desktop App made for Windows OS platform using React, Sockets, WPF, .NET."}
                     />
                 </div>
                 <div className='sm:col-span-12 col-span-6'>
                     <Project
-                        title={'Crypto Screener Application'}
-                        link={'/'}
-                        img={project1}
-                        github={'/'}
+                        title={'IDE Application'}
+                        link={'https://github.com/LoGiSTeRr/MyIDE'}
+                        img={project3}
+                        github={'https://github.com/LoGiSTeRr/MyIDE'}
                         type={'Application'}
-                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
-                    />
-                </div>
-                <div className=' col-span-12'>
-                    <FeaturedProject
-                        title={'Crypto Screener Application'}
-                        link={'/'}
-                        img={project1}
-                        github={'/'}
-                        type={'Application'}
-                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
-                    />
-                </div>
-                <div className='sm:col-span-12 col-span-6'>
-                    <Project
-                        title={'Crypto Screener Application'}
-                        link={'/'}
-                        img={project1}
-                        github={'/'}
-                        type={'Application'}
-                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
-                    />
-                </div>
-                <div className='sm:col-span-12 col-span-6'>
-                    <Project
-                        title={'Crypto Screener Application'}
-                        link={'/'}
-                        img={project1}
-                        github={'/'}
-                        type={'Application'}
-                        summary={"A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."}
+                        summary={"."}
                     />
                 </div>
             </div>
