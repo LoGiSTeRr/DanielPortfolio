@@ -42,12 +42,12 @@ const Experince = () => {
                 />
                 <Details
                     position={'Software Engineer'} company={'Freelance'}
-                    time={'2022-Present'}  address={'Baku'}
+                    time={'2020-Present'}  address={'Remote'}
                     work={"Worked on creating Desktop Applications on .NET technology, such as self-written IDE, Maze generator, Messenger"}
                 />
                 <Details
                     position={'Web developer'} company={'Start-Up'}
-                    time={'2022-Present'}  address={'Baku'}
+                    time={'2019-2021'}  address={'Baku'}
                     work={"Used ASP.NET to develop well-optimized APIs with well-written documentations"}
                 />
             </ul>
