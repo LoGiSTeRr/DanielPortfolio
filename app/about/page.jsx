@@ -50,7 +50,7 @@ const About = () => {
                 new and innovative ways to bring my clients' visions to life.
               </p>
               <p className="my-4 font-medium">
-                I believe that well-designed bakckend is about more than just making things work well – it's about solving problems and 
+                I believe that well-designed backend is about more than just making things work well – it's about solving problems and
                 creating intuitive, enjoyable experiences for users. 
               </p>
               <p className="font-medium">
